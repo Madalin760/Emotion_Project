@@ -17,7 +17,4 @@ This application processes a real-time webcam feed through a highly optimized pi
 - **Emotion Stabilization:** Uses a rolling history buffer (`EMOTION_HISTORY_SIZE = 15`) and statistical mode to filter out noise and prevent the "flickering" of detected emotions on the main face.
 - **SSD Face Detector:** Utilizes the Single Shot MultiBox Detector (`detector_backend='ssd'`) for fast, robust face detection, even accommodating multiple faces in a single frame.
 - **Dynamic UI:** Features a live FPS counter, confidence percentage display, and custom color-coded bounding boxes mapped to specific emotions.
-**How it works:**
-1. **Face Detection:** Locates faces within the frame using Haar Cascades or advanced MTCNN.
-2. **Feature Extraction:** Isolates the region of interest (ROI).
-3. **Classification:** Passes the ROI through a pre-trained neural network to output probabilities for emotions like Happy, Sad, Angry, Surprise, Neutral, etc.
+
